@@ -105,5 +105,11 @@ wasm-bindgen-derive = "0.2"
 wasm-bindgen-futures = "0.4"
 web-time = "1"
 web-sys = "0.3"
-wgpu = { version = "24", default-features = false }
+wgpu = { version = "25", default-features = false }
 winit = { version = "0.30", default-features = false }
+
+[patch.crates-io]
+eframe = { git = "https://github.com/emilk/egui.git" }
+egui = { git = "https://github.com/emilk/egui.git" }
+epaint = { git = "https://github.com/emilk/egui.git" }
+egui-wgpu = { git = "https://github.com/emilk/egui.git" }

@@ -65,11 +65,11 @@ impl UserEventHandler for MapController {
                 _ => EventPropagation::Propagate,
             },
             UserEvent::Scroll(delta, mouse_event) => {
-                let zoom = self.get_zoom(*delta, map.view().resolution());
-                let target = map
-                    .target_view()
-                    .zoom(zoom, mouse_event.screen_pointer_position);
-                map.animate_to(target, self.parameters.zoom_duration);
+                // let zoom = self.get_zoom(*delta, map.view().resolution());
+                // let target = map
+                //     .target_view()
+                //     .zoom(zoom, mouse_event.screen_pointer_position);
+                // map.animate_to(target, self.parameters.zoom_duration);
 
                 EventPropagation::Stop
             }
